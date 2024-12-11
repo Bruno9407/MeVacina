@@ -52,7 +52,7 @@ export function createApp(db: Low<Data>, options: AppOptions = {}) {
   app.use(json())
 
   app.get('/', (_req, res) =>
-    res.send(eta.render('index.html', { data: db.data })),
+    res.send(eta.render('../index.html', { data: db.data })),
   )
 
   app.get('/:name', (req, res, next) => {

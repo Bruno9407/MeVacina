@@ -43,7 +43,7 @@ async function loginUser(event) {
         sessionStorage.setItem('nomeUsuarioLogado', usuarioValido[0].nome);
         sessionStorage.setItem('emailUsuarioLogado', usuarioValido[0].email);
         alert("Login bem-sucedido!");
-        window.location.href = "../indexCarol/index.html";
+        window.location.href = "../../index.html";
     } else if (usuarioValido === 0) {
         alert("E-mail ou senha incorretos. Tente novamente.");
     } else {
